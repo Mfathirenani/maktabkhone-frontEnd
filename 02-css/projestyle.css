@@ -1,0 +1,138 @@
+div{
+
+    color: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+/*div:hover{
+    font-size: 150%;
+}*/
+body,html{
+    height: 100%;
+}
+a:link{ color: red}
+a:visited{ color: fuchsia}
+a:hover{ color: chartreuse}
+a:active{ color: green}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul li:nth-child(2n){
+    background-color: green;
+}
+ul li:nth-child(2n+1){
+    background-color: chartreuse;
+}
+.maintext::first-line{
+    font-size: larger;
+}
+.maintext::first-letter{
+    font-size: x-large;
+}
+/*div::after{
+    content: "\a\a";
+    white-space: pre;
+}*/
+#experience{
+    background-color: aqua;
+}
+.maintext:nth-child(2n+1){
+    background-color: aqua;
+}
+.maintext:nth-child(2n){
+    background-color: blue;
+}
+.maintext:nth-child(2n):hover{
+    color: red;
+}
+#about{
+    background-color: antiquewhite;
+    border: red solid 5px;
+   /* border-color: red;
+    border-style: solid;
+    border-width: 5px;*/
+    margin: 30px 10px 1px 1px;
+    padding: 10px;
+    border-radius: 30px 10px 30px 10px;
+    width: 10%;
+    min-height: 10cm;
+   /* overflow: auto;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+   /* position: absolute;
+    right: 0;*/
+    float: right;
+    background-image: url("images/pc.jpg"),url("images/paper.jpg");
+    background-position: right bottom , left top;
+    background-repeat: no-repeat , repeat;
+    background-size: contain , contain;
+
+}
+
+#maintextwrapper{
+    margin: 30px;
+    background-color: bisque;
+    padding: 30px  0;
+    width: 60%;
+   /* position: absolute;
+    right: 200px;*/
+    float: right;
+    margin: 30px 50px 50px 50px;
+}
+.maintext{
+    margin: 30px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: myfont;
+}
+#wrapper{
+    background-color: rgba(0,100,150,0.5);
+    width: 80%;
+    margin-top: 500px;
+    overflow: hidden;
+}
+#menu{
+    width: 10%;
+    background-color: blanchedalmond;
+   /* position: absolute;
+    left: 0;*/
+    float: left;
+    margin: 30px 1px 1px 10px;
+}
+@font-face {
+    src: url("fonts/BNAZANIN.TTF");
+    font-family: myfont;
+}
+#banner{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+#footer{
+    background-color: red;
+    position: relative;
+    bottom: 0;
+    padding: 2%;
+    width: 96%;
+}
+#modal_contact{
+    background-color: white;
+    padding: 30px;
+    border: black solid 3px;
+}
+.modal{
+    opacity: 0;
+    position: fixed;
+    top: 200px;
+    width: 50%;
+    margin-right: 25%;
+    text-align: center;
+}
